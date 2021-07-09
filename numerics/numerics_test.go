@@ -24,3 +24,23 @@ func TestRound(t *testing.T) {
 	}
 }
 
+func TestVariance(t *testing.T) {
+	input := []float64 {60, 47, 17, 43, 30}
+	expected := 217.04
+	actual := Variance(input)
+
+	if Round(actual, 2) != expected {
+		t.Fail()
+	}
+}
+
+func TestStandardDeviation(t *testing.T) {
+	input := []float64 {60, 47, 17, 43, 30}
+	expected := 14.73227749
+
+	actual := StandardDeviation(input)
+
+	if Round(actual, 8) != expected {
+		t.Fail()
+	}
+}

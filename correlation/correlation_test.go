@@ -1,7 +1,7 @@
 package correlation
 
 import "testing"
-import "gonums/numerics"
+import "github.com/kamgru/gonums/numerics"
 
 func TestCorrelation(t *testing.T) {
 
